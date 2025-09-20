@@ -45,5 +45,7 @@ public class MenuPanelApp {
         Group2.setLayout(new BorderLayout());
         JLabel label = new JLabel(text, SwingConstants.CENTER);
         label.setFont(new Font("Arial", Font.BOLD, 20));
+        Group2.add(label, BorderLayout.CENTER);
+        return Group2;
     }
     }

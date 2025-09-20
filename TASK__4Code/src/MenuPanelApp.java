@@ -19,5 +19,12 @@ public class MenuPanelApp {
         menuNavigate.add(profile);
         menuNavigate.add(settings);
         menuBar.add(menuNavigate);
+        JMenu menuFile = new JMenu("File");
+        JMenuItem exitItem = new JMenuItem("Exit");
+        menuFile.add(exitItem);
+        menuBar.add(menuFile);
+        frame.setJMenuBar(menuBar);
+        card = new CardLayout();
+        main = new JPanel(card);
     }
     }

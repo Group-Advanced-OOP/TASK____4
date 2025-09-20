@@ -26,5 +26,11 @@ public class MenuPanelApp {
         frame.setJMenuBar(menuBar);
         card = new CardLayout();
         main = new JPanel(card);
+        JPanel homePanel = createPanel("Welcome to Home Page", Color.BLUE);
+        JPanel profilePanel = createPanel("This is the Profile Page", Color.CYAN);
+        JPanel settingsPanel = createPanel("Adjust your Settings here", Color.ORANGE);
+        main.add(homePanel, "Home");
+        main.add(profilePanel, "Profile");
+        main.add(settingsPanel, "Settings");
     }
     }

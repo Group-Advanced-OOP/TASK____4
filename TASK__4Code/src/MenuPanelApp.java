@@ -39,4 +39,9 @@ public class MenuPanelApp {
         frame.add(main);
         frame.setVisible(true);
     }
+    private JPanel createPanel(String text, Color bgColor) {
+        JPanel Group2 = new JPanel();
+        Group2.setBackground(bgColor);
+        Group2.setLayout(new BorderLayout());
+    }
     }

@@ -32,5 +32,11 @@ public class MenuPanelApp {
         main.add(homePanel, "Home");
         main.add(profilePanel, "Profile");
         main.add(settingsPanel, "Settings");
+        home.addActionListener(e -> card.show(main, "Home"));
+        profile.addActionListener(e -> card.show(main, "Profile"));
+        settings.addActionListener(e -> card.show(main, "Settings"));
+        exitItem.addActionListener(e -> System.exit(0));
+        frame.add(main);
+        frame.setVisible(true);
     }
     }
